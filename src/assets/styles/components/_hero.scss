@@ -1,0 +1,62 @@
+.hero {
+  margin-top: 100px;
+
+  &__copy {
+    @include make-row();
+
+    &-title {
+      @include make-col-ready();
+      @include make-col(10);
+      @include type--title();
+      margin-bottom: 60px;
+    }
+
+    &-description {
+      @include make-col-ready();
+      @include make-col(8);
+      @include type--body();
+    }
+
+    &-link {
+      @include make-col-ready();
+      @include make-col(12);
+      margin-top: 30px;
+    }
+  }
+
+  &__actions {
+    counter-reset: action;
+    margin-top: 75px;
+    background-color: rgba(255, 255, 255, 0.05);
+
+    &-wrapper {
+      @include make-row();
+    }
+  }
+
+  &__action {
+    @include reset-button();
+    @include make-col-ready();
+    @include make-col(3);
+    @include type--subtitle();
+    counter-increment: action;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 220px;
+    background-color: rgba(255, 255, 255, 0.025);
+    color: #fff;
+    opacity: 0.6;
+    transition: opacity 0.3s ease;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &:before {
+      @include type--label();
+      content: '0' counter(action);
+      margin-bottom: 10px;
+    }
+  }
+}

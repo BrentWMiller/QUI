@@ -1,0 +1,40 @@
+body {
+  font-size: $font-size-base;
+  color: #fff;
+}
+
+@mixin type--title() {
+  font-family: $headings-font-family;
+  font-size: 5em;
+  line-height: 1.05em;
+  letter-spacing: -0.025em;
+  font-weight: bold;
+}
+
+@mixin type--subtitle() {
+  font-family: $headings-font-family;
+  font-size: 1.25em;
+  line-height: 1.05em;
+  letter-spacing: 0.025em;
+  font-weight: bold;
+}
+
+@mixin type--body() {
+  font-size: 1em;
+  line-height: 1.75em;
+  letter-spacing: 0.05em;
+  color: gray('300');
+}
+
+@mixin type--label() {
+  font-size: 0.5em;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+@mixin type--button() {
+  font-size: 0.85em;
+  letter-spacing: 0.025em;
+  font-weight: bold;
+  text-transform: uppercase;
+}

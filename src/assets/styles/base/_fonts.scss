@@ -1,0 +1,31 @@
+// src is relative to `main.scss`
+
+// Roboto
+@font-face {
+  font-family: 'Roboto';
+  src: url('./assets/fonts/Roboto/Roboto-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('./assets/fonts/Roboto/Roboto-Bold.ttf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+// Rubik
+@font-face {
+  font-family: 'Rubik';
+  src: url('./assets/fonts/Rubik/Rubik-Bold.ttf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('./assets/fonts/Rubik/Rubik-Black.ttf');
+  font-weight: 900;
+  font-style: normal;
+}

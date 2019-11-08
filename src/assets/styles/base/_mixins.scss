@@ -1,0 +1,22 @@
+@mixin reset-list() {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin reset-last-paragraph {
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@mixin reset-button {
+  padding: 0;
+  background-color: transparent;
+  border: 0;
+}
+
+@mixin maintain-ratio($divisor: 1.43, $dividend: 1) {
+  width: 100%;
+  padding-bottom: $dividend / $divisor * 100%;
+}

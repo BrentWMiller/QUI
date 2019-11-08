@@ -1,0 +1,7 @@
+@function color-bg($key) {
+  @return map-get($colors-bg, $key);
+}
+
+@function get-breakpoints($key: 'md') {
+  @return map-get($container-max-widths, $key);
+}

@@ -1,0 +1,38 @@
+@mixin qui-grid() {
+  @include make-container();
+  @include make-container-max-widths();
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0;
+  border: none;
+  pointer-events: none;
+  background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)) no-repeat center/1px 100%;
+
+  &:before,
+  &:after {
+    @include make-col-ready();
+    @include make-col(3);
+    content: '';
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+    padding: 0;
+    height: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    background-color: rgba(255, 255, 255, 0.01);
+  }
+}
+
+@mixin qui-gradient() {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: radial-gradient(circle at bottom, rgba(color-bg('light'), 0.5) 11%, rgba(color-bg('dark'), 0.5) 100%);
+}
