@@ -1,5 +1,9 @@
-@function color-bg($key) {
-  @return map-get($colors-bg, $key);
+@function bg-color($key) {
+  @return map-get($bg-colors, $key);
+}
+
+@function text-color($key) {
+  @return map-get($text-colors, $key);
 }
 
 @function get-breakpoints($key: 'md') {

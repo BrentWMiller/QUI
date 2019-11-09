@@ -34,5 +34,5 @@
   top: 0;
   left: 0;
   width: 100%;
-  background: radial-gradient(circle at bottom, rgba(color-bg('light'), 0.5) 11%, rgba(color-bg('dark'), 0.5) 100%);
+  background: radial-gradient(circle at top, rgba(bg-color('light'), 0.5) 11%, rgba(bg-color('dark'), 0.5) 100%);
 }

@@ -5,17 +5,18 @@
   display: inline-flex;
   padding: 20px 35px;
   border-radius: $button-border-radius;
-  background-color: rgba(255, 255, 255, 0.05);
   border: 2px solid rgba(255, 255, 255, 0.035);
-  box-shadow: 0px 5px 20px 0 rgba(color-bg('dark'), 0.5);
-  color: #fff;
+  box-shadow: 0px 5px 20px 0 rgba(theme-color('dark'), 0.3);
+  color: text-color('base');
 
   &:hover,
   &:focus {
-    color: #fff;
+    color: text-color('base');
     text-decoration: none;
   }
 
   &--primary {
+    background-color: theme-color('primary');
+    box-shadow: 0px 5px 20px 0 rgba(theme-color('primary'), 0.3);
   }
 }

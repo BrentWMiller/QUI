@@ -1,6 +1,6 @@
 body {
   font-size: $font-size-base;
-  color: #fff;
+  color: text-color('base');
 }
 
 @mixin type--title() {
@@ -17,13 +17,14 @@ body {
   line-height: 1.05em;
   letter-spacing: 0.025em;
   font-weight: bold;
+  color: text-color('secondary');
 }
 
 @mixin type--body() {
   font-size: 1em;
   line-height: 1.75em;
   letter-spacing: 0.05em;
-  color: gray('300');
+  color: text-color('secondary');
 }
 
 @mixin type--label() {

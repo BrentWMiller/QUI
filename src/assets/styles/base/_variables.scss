@@ -1,11 +1,17 @@
 $theme-colors: (
-  'primary': #fffb00,
+  'primary': #fe575b,
+  'dark': #03070c,
 );
 
-$colors-bg: (
-  dark: #2f3356,
-  base: #3f3257,
-  light: #8a3075,
+$bg-colors: (
+  dark: #436e8c,
+  base: #4b475b,
+  light: #a1537e,
+);
+
+$text-colors: (
+  base: #fff,
+  secondary: #c2c6e1,
 );
 
 // Fonts
